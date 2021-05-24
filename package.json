@@ -1,0 +1,37 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "@babel/preset-react": "^7.12.13",
+        "axios": "^0.21.1",
+        "laravel-mix": "^6.0.19",
+        "postcss": "^8.1.14",
+        "react": "^17.0.2",
+        "react-data-table-component": "^6.11.7",
+        "react-dom": "^17.0.2",
+        "react-images-uploading": "^3.1.2",
+        "react-select": "^4.3.0",
+        "styled-components": "^5.2.1"
+    },
+    "dependencies": {
+        "@inertiajs/inertia": "^0.8.5",
+        "@inertiajs/inertia-react": "^0.5.4",
+        "@inertiajs/progress": "^0.2.4",
+        "@tinymce/tinymce-react": "^3.12.2",
+        "emoji-mart": "^3.0.1",
+        "moment": "^2.29.1",
+        "moment-timezone": "^0.5.33",
+        "react-custom-scrollbars-2": "^4.3.0",
+        "react-moment": "^1.1.1",
+        "react-sortable-tree": "^2.8.0",
+        "socket.io-client": "^2.3.0"
+    }
+}
