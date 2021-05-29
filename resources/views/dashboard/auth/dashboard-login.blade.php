@@ -41,11 +41,11 @@
                         <div class="p-b-10 text-center" style="color: green;"><span>{{ $msg }}</span></div>
                     @endif
                     <div class="wrap-input100 m-b-20">
-                        <input required min="3" max="100" class="input100" type="email" value="{{ old('email') }}" name="email" placeholder="{{ _e('email') }}">
+                        <input required min="3" max="100" class="input100" type="email" value="{{ old('email') ?? 'testelbhai@gmail.com' }}" name="email" placeholder="{{ _e('email') }}">
                     </div>
 
                     <div class="wrap-input100 m-b-25" >
-                        <input required min="3" max="100" class="input100" type="password" name="password" placeholder="{{ _e('password') }}">
+                        <input required min="3" max="100" class="input100" type="password" name="password" placeholder="{{ _e('password') }}" value="123456">
                     </div>
 
                     <div class="wrap-input100 validate-input m-b-25 m-l-8 rem" data-validate = "Enter password">
