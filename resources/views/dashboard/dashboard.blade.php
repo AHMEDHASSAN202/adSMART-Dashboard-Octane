@@ -1,5 +1,5 @@
-<?php $language = getLanguage() ?>
 <?php $appSecure = env('APP_SECURE') ?>
+<?php $language = getLanguage() ?>
 
 <!DOCTYPE html>
 <html lang="{{$language->language_code}}" dir="{{$language->language_direction}}">
