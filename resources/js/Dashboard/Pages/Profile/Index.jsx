@@ -44,9 +44,9 @@ const Index = (props) => {
         errors:personalInfoErrors,
         transform: personalInfoTransform
     } = useForm({
-        fk_user_country: personal_info.fk_user_country,
-        user_phone: personal_info.user_phone,
-        user_address: personal_info.user_address,
+        fk_user_country: personal_info?.fk_user_country,
+        user_phone: personal_info?.user_phone,
+        user_address: personal_info?.user_address,
     })
     personalInfoTransform((data) => ({...data, user_phone: new Number(data.user_phone)}))
     const {
