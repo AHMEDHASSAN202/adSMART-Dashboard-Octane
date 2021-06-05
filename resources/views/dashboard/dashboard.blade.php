@@ -19,14 +19,14 @@
 
         <!--begin::Global Theme Styles(used by all pages)-->
         @if($language->language_direction == 'rtl')
-            <link href="{{ asset('dashboard-assets/plugins/global/plugins.bundle.rtl.css', $appSecure) }}" rel="stylesheet" type="text/css"/>
-            <link href="{{ asset('dashboard-assets/plugins/custom/prismjs/prismjs.bundle.rtl.css', $appSecure) }}" rel="stylesheet" type="text/css"/>
+{{--            <link href="{{ asset('dashboard-assets/plugins/global/plugins.bundle.rtl.css', $appSecure) }}" rel="stylesheet" type="text/css"/>--}}
+{{--            <link href="{{ asset('dashboard-assets/plugins/custom/prismjs/prismjs.bundle.rtl.css', $appSecure) }}" rel="stylesheet" type="text/css"/>--}}
             <link href="{{ asset('dashboard-assets/css/style.bundle.rtl.css', $appSecure) }}" rel="stylesheet" type="text/css"/>
         @else
-            <link href="{{ asset('dashboard-assets/plugins/global/plugins.bundle.css', $appSecure) }}" rel="stylesheet" type="text/css"/>
-            <link href="{{ asset('dashboard-assets/plugins/custom/prismjs/prismjs.bundle.css', $appSecure) }}" rel="stylesheet" type="text/css"/>
             <link href="{{ asset('dashboard-assets/css/style.bundle.css', $appSecure) }}" rel="stylesheet" type="text/css"/>
         @endif
+        <link href="{{ asset('dashboard-assets/plugins/global/plugins.bundle.css', $appSecure) }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('dashboard-assets/plugins/custom/prismjs/prismjs.bundle.css', $appSecure) }}" rel="stylesheet" type="text/css"/>
         <!--end::Global Theme Styles-->
 
         <!--begin::Layout Themes(used by all pages)-->
