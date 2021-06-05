@@ -23,7 +23,7 @@ const Index = (props) => {
     const {profile: {personal_info, ...profile}, loggedActivities, myActivities, flags} = props;
     const [isPasswordPanelOpen, setPasswordPanelOpen] = useState(false);
     const [isDeleteAccountPanel, setDeleteAccountPanel] = useState(false);
-    const [phoneCode, setPhoneCode] = useState(personal_info.phone_code || '');
+    const [phoneCode, setPhoneCode] = useState(personal_info?.phone_code || '');
     const {
         data:profileInfoData,
         setData:profileInfoSetData,
